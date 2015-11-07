@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Admin.AsignarEncuestaAsignaturaController">
+   <children>
+      <ImageView fitHeight="82.0" fitWidth="455.0" layoutX="25.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="573.0" layoutY="41.0" text="Asignar Encuesta">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaencuesta" layoutX="48.0" layoutY="120.0" onMouseClicked="#seleccionarencuesta" prefHeight="414.0" prefWidth="565.0" />
+      <Button fx:id="asignaturabt" layoutX="623.0" layoutY="528.0" mnemonicParsing="false" onAction="#genarara" text="Asignatura" />
+      <Button fx:id="encuestabt" layoutX="707.0" layoutY="528.0" mnemonicParsing="false" onAction="#generare" prefHeight="25.0" prefWidth="73.0" text="Encuesta" />
+      <Button fx:id="asignarbt" layoutX="795.0" layoutY="528.0" mnemonicParsing="false" onAction="#asignar" prefHeight="25.0" prefWidth="73.0" text="Asignar" />
+      <ComboBox fx:id="asignatura" layoutX="631.0" layoutY="214.0" prefHeight="25.0" prefWidth="164.0" promptText="Asignatura" />
+      <ComboBox fx:id="encuesta" layoutX="631.0" layoutY="288.0" prefHeight="25.0" prefWidth="164.0" promptText="Encuesta" />
+   </children>
+</AnchorPane>

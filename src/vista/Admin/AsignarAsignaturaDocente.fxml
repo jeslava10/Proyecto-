@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="aasignar" prefHeight="554.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Admin.AsignarAsignaturaDocenteController">
+   <children>
+      <TableView fx:id="tablaasignatura" layoutX="34.0" layoutY="103.0" prefHeight="372.0" prefWidth="548.0" />
+      <ImageView fitHeight="134.0" fitWidth="419.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/Logo.png" />
+         </image></ImageView>
+      <Label layoutX="544.0" layoutY="22.0" text="Asignar Asignatura ">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font></Label>
+      <Button fx:id="generard" layoutX="695.0" layoutY="432.0" mnemonicParsing="false" onAction="#generard" text="Docente" />
+      <TextField fx:id="cupo" layoutX="620.0" layoutY="234.0" promptText="Cupo" />
+      <Button fx:id="asignar" layoutX="607.0" layoutY="432.0" mnemonicParsing="false" onAction="#asignar" prefHeight="25.0" prefWidth="67.0" text="Asignar" />
+      <Button fx:id="generara" layoutX="782.0" layoutY="432.0" mnemonicParsing="false" onAction="#generara" text="Asignatura" />
+      <ComboBox fx:id="grupo" layoutX="620.0" layoutY="282.0" prefWidth="150.0" promptText="Grupo" />
+      <ComboBox fx:id="profesor" layoutX="620.0" layoutY="168.0" prefWidth="150.0" promptText="Profesor" />
+      <ComboBox fx:id="asignatura" layoutX="620.0" layoutY="201.0" prefWidth="150.0" promptText="Asignatura" />
+   </children>
+</AnchorPane>

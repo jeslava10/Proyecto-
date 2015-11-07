@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Admin.GestionPreguntaController">
+   <children>
+      <ImageView fitHeight="82.0" fitWidth="455.0" layoutX="26.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="575.0" layoutY="40.0" text="Gestion Pregunta">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="consultarbt" layoutX="696.0" layoutY="535.0" mnemonicParsing="false" onAction="#consultar" prefHeight="25.0" prefWidth="90.0" text="Consultar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="modificarbt" layoutX="585.0" layoutY="535.0" mnemonicParsing="false" onAction="#modificar" prefHeight="31.0" prefWidth="90.0" text="Modificar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="anadirbt" layoutX="481.0" layoutY="535.0" mnemonicParsing="false" onAction="#anadir" prefHeight="21.0" prefWidth="90.0" text="Añadir">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="preguntatf" layoutX="181.0" layoutY="164.0" prefHeight="25.0" prefWidth="519.0" />
+      <TextField fx:id="numerotf" layoutX="181.0" layoutY="131.0" prefHeight="25.0" prefWidth="73.0" />
+      <Label layoutX="96.0" layoutY="241.0" text="Fecha Modifiacion :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="206.0" text="Fecha Creacion :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="166.0" text="Pregunta :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="133.0" text="Numero :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablapreguntas" layoutX="90.0" layoutY="281.0" onMouseClicked="#seleccionar" prefHeight="201.0" prefWidth="726.0" />
+      <TextField fx:id="fechamtf" layoutX="234.0" layoutY="239.0" prefHeight="25.0" prefWidth="161.0" />
+      <TextField fx:id="fechactf" layoutX="218.0" layoutY="204.0" prefHeight="25.0" prefWidth="161.0" />
+      <Button fx:id="limpiar" layoutX="796.0" layoutY="535.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="25.0" prefWidth="90.0" text="Limpiar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Admin.AsignarPreguntaBloqueController">
+   <children>
+      <ComboBox fx:id="pregunta" layoutX="655.0" layoutY="298.0" prefWidth="150.0" promptText="Pregunta" />
+      <ComboBox fx:id="bloque" layoutX="655.0" layoutY="224.0" onAction="#AccionBloque" prefWidth="150.0" promptText="Bloque" />
+      <Button fx:id="asignarbt" layoutX="783.0" layoutY="538.0" mnemonicParsing="false" onAction="#asignar" prefHeight="25.0" prefWidth="73.0" text="Asignar" />
+      <Button fx:id="bloquebt" layoutX="699.0" layoutY="538.0" mnemonicParsing="false" onAction="#genararb" prefHeight="25.0" prefWidth="73.0" text="Bloque" />
+      <Button fx:id="preguntabt" layoutX="619.0" layoutY="538.0" mnemonicParsing="false" onAction="#genararp" text="Pregunta" />
+      <TableView fx:id="tablabloque" layoutX="24.0" layoutY="130.0" onMouseClicked="#seleccionarencuesta" prefHeight="455.0" prefWidth="576.0" />
+      <Label layoutX="559.0" layoutY="51.0" text="Asignar Pregunta">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="82.0" fitWidth="455.0" layoutX="35.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

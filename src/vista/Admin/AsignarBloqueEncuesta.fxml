@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="control.Admin.AsignarBloqueEncuestaController">
+   <children>
+      <ImageView fitHeight="82.0" fitWidth="455.0" layoutX="45.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagenes/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="569.0" layoutY="61.0" text="Asignar Bloque">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaencuesta" layoutX="34.0" layoutY="140.0" onMouseClicked="#seleccionarencuesta" prefHeight="412.0" prefWidth="555.0" />
+      <Button fx:id="encuestatabt" layoutX="629.0" layoutY="548.0" mnemonicParsing="false" onAction="#genarare" text="Encuesta" />
+      <Button fx:id="bloquebt" layoutX="709.0" layoutY="548.0" mnemonicParsing="false" onAction="#genararb" prefHeight="25.0" prefWidth="73.0" text="Bloque" />
+      <Button fx:id="asignarbt" layoutX="793.0" layoutY="548.0" mnemonicParsing="false" onAction="#asignar" prefHeight="25.0" prefWidth="73.0" text="Asignar" />
+      <ComboBox fx:id="bloque" layoutX="665.0" layoutY="234.0" prefWidth="150.0" promptText="Bloque" />
+      <ComboBox fx:id="encuesta" layoutX="665.0" layoutY="308.0" prefWidth="150.0" promptText="Encuesta" />
+   </children>
+</AnchorPane>
